@@ -7,6 +7,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "npm run dev",
     "projfrontend": "cd projfrontend && npm start",
     "projbackend": "cd projbackend && nodemon app.js",
     "dev": "concurrently --kill-others-on-fail \"npm run projbackend\" \"npm run projfrontend\"",
