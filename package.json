@@ -7,9 +7,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "run dev",
     "projfrontend": "cd projfrontend && npm start",
-    "projbackend": "cd projbackend && npm start",
+    "projbackend": "cd projbackend && nodemon app.js",
     "dev": "concurrently --kill-others-on-fail \"npm run projbackend\" \"npm run projfrontend\"",
     "heroku-postbuild": "cd projfrontend && npm install && npm run build"
   },
